@@ -1,0 +1,16 @@
+<div class="w-50 mx-auto mt-5 shadow p-3 mb-5 bg-white rounded">
+<h1>User Sign Up </h1>
+<div>
+<%= form_with model: @user do |f| %>
+  <div class= "form-group">
+  <%= f.label :username %>
+  <%= f.text_field :username, class: "form-control"%>
+  </div>
+  <div class="custom-file my-3">
+  <%= f.file_field :avatar, class: 'custom-file-input', direct_upload: true, accept: "image/jpeg, image/gif, image/png" %>
+  <%= f.label :avatar, class: 'custom-file-label' %>
+</div>
+  <%= f.submit "Sign Up", class: "btn btn-primary"%>
+<%end%>
+</div>
+</div>
