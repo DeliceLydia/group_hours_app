@@ -9,14 +9,8 @@ class UsersController < ApplicationController
 
     def create
         @user = User.create(user_params)
-        if @user.save
-            flash[:success] = 'Sign Up successful, please login to continue!'
-            redirect_to login_path
-        else
-            flash[:danger] = @user.errors.full_messages
-            redirect_to signup_path
-        end
-            
+        flash[:success] = 'Sign Up successful, please login to continue!'
+        redirect_to @user
     end
 
     def show
