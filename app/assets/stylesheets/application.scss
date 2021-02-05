@@ -16,7 +16,13 @@
 
  @import "bootstrap/scss/bootstrap";
 
- h1{
+ .heading {
+     font-size: 2.675em;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     text-transform: capitalize;
+ }
+
+ .title{
      color: #377Bc2;
  }
 

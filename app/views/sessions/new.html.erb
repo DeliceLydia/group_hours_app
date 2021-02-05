@@ -1,5 +1,7 @@
-<div class="w-75 mx-auto mt-5 shadow p-4 mb-5">
-<h1 class="text-center"> Sign In </h1>
+<div class = "main">
+<h1 class = "text-center mt-5 heading"> Grouping hours app is here!</h1>
+<div class="w-75 mx-auto shadow p-4 mt-5 mb-5">
+<h2 class="text-center title heading"> Sign In </h2>
 <div>
 <%= form_with model: @user do |f| %>
   <div class= "form-group">
@@ -7,6 +9,11 @@
   <%= f.text_field :name, class: "form-control"%>
   </div>
   <%= f.submit "Sign In", class: "btn mx-auto w-75 d-block button"%>
+  <div class = "bottom-link mt-3 text-center">
+  <%= "Don't have an account?" %>
+  <%= link_to 'Sign Up', signup_path, class: "title"%>
+  </div>
 <%end%>
+</div>
 </div>
 </div>
