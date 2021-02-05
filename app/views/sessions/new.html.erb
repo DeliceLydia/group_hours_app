@@ -1,12 +1,12 @@
 <div class="w-75 mx-auto mt-5 shadow p-4 mb-5">
-<h1 class="text-center"> Sign Up </h1>
+<h1 class="text-center"> Sign In </h1>
 <div>
 <%= form_with model: @user do |f| %>
   <div class= "form-group">
   <%= f.label :Name %>
   <%= f.text_field :name, class: "form-control"%>
   </div>
-  <%= f.submit "Sign Up", class: "btn mx-auto w-75 d-block button"%>
+  <%= f.submit "Sign In", class: "btn mx-auto w-75 d-block button"%>
 <%end%>
 </div>
 </div>
