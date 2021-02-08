@@ -7,6 +7,8 @@ gem 'rubocop', '~>0.81.0'
 
 gem "paperclip", "~> 6.0.0"
 
+gem "font-awesome-rails"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use postgresql as the database for Active Record

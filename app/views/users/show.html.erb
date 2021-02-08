@@ -4,13 +4,21 @@
         <h1><%= @user.name %></h1>
     </div>
     <ul class="list-group my-5">
-        <li class="list-group-item bg-primary>
-            <i class="fas mr-3 fa-globe"></i>
-            <%= link_to 'Logout', logout_path, method: 'delete', class: 'text-black' %>
+        <li class="lists-items">
+            <i class="fa mr-3 fa-globe"></i>
+            <%= link_to 'All My Grouped Hours', logout_path, method: 'delete', class: 'text-white' %>
         </li>
-        <li class="list-group-item bg-primary>
-            <i class="fas mr-3 fa-globe"></i>
-            <%= link_to 'Logout', logout_path, method: 'delete', class: 'text-black' %>
+        <li class="lists-items">
+            <i class="fa mr-3 fa-external-link-square"></i>
+            <%= link_to 'All My External Grouped hours', logout_path, method: 'delete', class: 'text-white' %>
+        </li>
+        <li class="lists-items">
+        <i class="fa fa-object-group mr-3"></i></i>
+            <%= link_to 'All Groups', logout_path, method: 'delete', class: 'text-white' %>
+        </li>
+        <li class="lists-items">
+        <i class="fa mr-3 fa-sign-out"></i>
+            <%= link_to 'Logout', logout_path, method: 'delete', class: 'text-white' %>
         </li>
     </ul>
 </div>

@@ -3,11 +3,19 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .avatar {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .user_page {
     background-color: #377Bc2;
+}
+
+.lists-items {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
