@@ -9,6 +9,12 @@ gem "paperclip", "~> 6.0.0"
 
 gem "font-awesome-rails"
 
+gem "will_paginate", "~> 3.0"
+
+gem 'will_paginate-bootstrap4'
+
+gem 'link_with_icon'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use postgresql as the database for Active Record

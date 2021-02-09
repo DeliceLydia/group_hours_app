@@ -8,13 +8,22 @@ class UsersController < ApplicationController
     end
 
     def create
-        @user = User.create(user_params)
-        flash[:success] = 'Sign Up successful, please login to continue!'
-        redirect_to @user
+        @user = User.new(user_params)
+        if @user.save
+            flash[:success] = 'Sign Up successful, please login to continue!'
+            log_in @user
+            redirect_to @user
+        else
+            flash[:danger] = @user.errors.full_messages
+            redirect_back(fallback_location: signup_path)
+        end
     end
 
     def show
-      @user = User.find(params[:id])
+        @user = current_user
+        return if logged_in?
+        flash[:danger] = ['Access not allowed. Please login as this user first']
+        redirect_to login_path
     end
 
     private

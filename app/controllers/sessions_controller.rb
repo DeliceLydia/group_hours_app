@@ -2,11 +2,11 @@ class SessionsController < ApplicationController
     def new; end
 
     def create
-      user = User.find_by_username(params[:name])
+      user = User.find_by(name: params[:name])
       if user
-        session[:current_user_id] = user.id
+        log_in user
         flash[:success] = 'Successfully Logged In!'
-        redirect_to root_path
+        redirect_to user
       else
         flash.now[:alert] = 'name not found!'
         render :new
@@ -14,9 +14,8 @@ class SessionsController < ApplicationController
     end
 
     def destroy
-        session.delete(:current_user_id)
-        @_current_user = nil
+        session[user_id = nil]
         flash[:success] = 'Successfully Logged Out!'
-        redirect_to root_url
+        redirect_to root_path
     end
 end

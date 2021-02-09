@@ -1,4 +1,4 @@
 class GroupHour < ApplicationRecord
     belongs_to :group
-    belongs_to :project_recorder
+    belongs_to :grouping
 end

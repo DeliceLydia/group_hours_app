@@ -3,7 +3,7 @@
 <div class="w-75 mx-auto shadow p-4 mt-5 mb-5">
 <h2 class="text-center title heading"> Sign In </h2>
 <div>
-<%= form_with model: @user do |f| %>
+<%= form_with url: sessions_path, local: true do |f| %>
   <div class= "form-group">
   <%= f.label :Name %>
   <%= f.text_field :name, class: "form-control"%>
