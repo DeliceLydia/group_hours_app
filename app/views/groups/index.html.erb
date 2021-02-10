@@ -1,0 +1,11 @@
+provide(:title, 'Groups')
+<%= render 'layouts/header' %>
+<div class="d-flex justify-content-center mt-3">
+  <%= will_paginate @groups, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+</div>
+<div class="new-group">
+ <%= render @groups %>
+</div>
+<div class="bg-success py-3 fixed-button">
+    <%= link_to 'New Group', new_group_path, class=""
+</div>

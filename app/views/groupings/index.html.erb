@@ -10,9 +10,9 @@
   <%= will_paginate @groupings, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 </div>
 <div class="space-for-new">
-  <%= render 'grouping' %>
+  <%= render @groupings %>
 </div>
-<div class="py-3 fixed-bottom">
+<div class="green-color py-3 fixed-bottom">
     <%= link_to "New Grouping", new_grouping_path, type: 'button',
-    class: "btn w-75 mx-auto d-block py-3" %>
+    class: "btn btn-outline-light w-75 mx-auto d-block py-3 text-white" %>
 </div>
