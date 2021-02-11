@@ -1,7 +1,7 @@
 module GroupsHelper
-    def display_icon(group)
-        if group.icon.attached?
-          image_tag group.display_image, class: 'group-img'
+    def group_icon(group)
+        if group.icon.present?
+          image_tag group.icon, class: 'group-img'
         else
           image_tag 'default-group-icon.png', class: 'group-img'
         end
