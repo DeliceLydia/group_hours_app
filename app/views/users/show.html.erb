@@ -9,12 +9,16 @@
             <%= link_to 'All My Grouped Hours', groupings_path, class: 'text-white' %>
         </li>
         <li class="lists-items">
+            <i class="fa mr-3 fa-globe"></i>
+            <%= link_to 'All My External Grouped Hours', groupings_external_index_path, class: 'text-white' %>
+        </li>
+        <li class="lists-items">
         <i class="fa mr-3 fa-users"></i>
         <%= link_to 'All groups', groups_path, class: 'text-white' %>
         </li>
         <li class="lists-items">
         <i class="fa mr-3 fa-sign-out"></i>
-            <%= link_to 'Logout', logout_path, method: 'delete', class: 'text-white' %>
+            <%= link_to 'Logout', logout_path, method: :delete, class: 'text-white' %>
         </li>
     </ul>
 </div>

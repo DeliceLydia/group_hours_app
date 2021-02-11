@@ -5,6 +5,13 @@ class GroupingsController < ApplicationController
         @groupings = Grouping.includes(groups: [icon_attachment: :blob]).paginate(page: params[:page], per_page: 3)
         .where('author_id=?', current_user.id).joins(:groups)
     end
+
+    def external_index
+        @groupings = Grouping.includes(groups: [icon_attachment: :blob]).paginate(page: params[:page], per_page: 3)
+        .where('author_id=?', current_user.id).left_outer_joins(:groups).where('groups.id IS NULL')
+        render 'index'
+    end
+
     
     def new
         @grouping = Grouping.new
@@ -19,7 +26,7 @@ class GroupingsController < ApplicationController
             flash[:success] = ['Grouped hours added']
             redirect_to groupings_path
         else
-            flash[:danger] = groupings.errors.full_messages
+            flash[:danger] = grouping.errors.full_messages
             redirect_back(fallback_location: new_grouping_path)
         end
     end
