@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
     end
 
     def show
-        @group = Group.includes(:hours, :user).find(params[:id])
+        @group = Group.includes(:groupings, :user).find(params[:id])
     end
 
     private

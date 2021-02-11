@@ -1,0 +1,24 @@
+<% provide(:title, @group.name) %>
+<%= render 'layouts/header' %>
+<div class="card">
+    <div class="card-body d-flex align-items-center">
+        <%= group_icon(@group) %>
+        <h2 class="ml-3">Group-Name: <%= @group.name %></h2>
+    </div>
+    <div class="card-footer">
+        Was created by <%= @group.user.name %> on <%= creation_date(@group) %>
+    </div
+</div>
+<div class="card mt-3">
+    <div class="card-body">
+        <h3> Grouped Hours On This Group </h3>
+    </div>
+</div>
+<% @group.groupings.each do |g| %>
+    <div class="card w-75 mx-auto my-3">
+      <div class="card-body d-flex justify-content-between">
+        <span><%= g.name %></span>
+        <strong><%= g.hours%>Hours</strong>
+      </div>
+    </div>
+  <% end %>
