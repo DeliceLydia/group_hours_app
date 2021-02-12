@@ -1,6 +1,6 @@
-require "active_support/core_ext/integer/time"
+require 'active_support/core_ext/integer/time'
 
-Paperclip.options[:command_path] = "/usr/local/bin/"
+Paperclip.options[:command_path] = '/usr/local/bin/'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.

@@ -14,40 +14,40 @@
  *= require_self
  */
 
- @import "bootstrap/scss/bootstrap";
- @import "font-awesome";
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
 
- .heading {
-     font-size: 2.675em;
-     font-family:Georgia, 'Times New Roman', Times, serif;
-     text-transform: capitalize;
- }
+.heading {
+  font-size: 2.675em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+}
 
- .title{
-     color: #377Bc2;
- }
+.title {
+  color: #377bc2;
+}
 
- .button {
-     background-color: #377Bc2;
-     color: #fff;
- }
+.button {
+  background-color: #377bc2;
+  color: #fff;
+}
 
- .head-hour {
-     font-size: 16px;
- }
+.head-hour {
+  font-size: 16px;
+}
 
- .alert-alert {
-    @extend .alert-danger;
- }
-  
- .alert-error {
-    @extend .alert-warning;
- }
-  
- .outline{
-    border-color: #f8f9fa;
- }
+.alert-alert {
+  @extend .alert-danger;
+}
 
- .outline:hover{
-     text-decoration: underline;
- }
+.alert-error {
+  @extend .alert-warning;
+}
+
+.outline {
+  border-color: #f8f9fa;
+}
+
+.outline:hover {
+  text-decoration: underline;
+}

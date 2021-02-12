@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-    include SessionsHelper
-    before_action :set_cache_headers
+  include SessionsHelper
+  before_action :set_cache_headers
 
   def set_cache_headers
     response.headers['Cache-Control'] = 'no-cache, no-store'
