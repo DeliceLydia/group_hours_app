@@ -35,3 +35,19 @@
  .head-hour {
      font-size: 16px;
  }
+
+ .alert-alert {
+    @extend .alert-danger;
+ }
+  
+ .alert-error {
+    @extend .alert-warning;
+ }
+  
+ .outline{
+    border-color: #f8f9fa;
+ }
+
+ .outline:hover{
+     text-decoration: underline;
+ }

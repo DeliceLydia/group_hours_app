@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
         flash[:success] = 'Successfully Logged In!'
         redirect_to user
       else
-        flash.now[:alert] = 'name not found!'
+        flash.now[:alert] = 'Name not found!'
         render :new
       end
     end

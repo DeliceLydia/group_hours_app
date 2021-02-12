@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   def logged_in
     return if logged_in?
 
-    flash[:danger] = ['Please login to continue']
+    flash[:error] = ['Please login to continue']
     redirect_to root_url
   end
 end

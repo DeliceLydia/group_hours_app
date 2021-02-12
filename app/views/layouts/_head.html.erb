@@ -1,0 +1,8 @@
+<nav class = "navbar navbar-dark user_page py-4">
+    <div class="navbar-nav text-white font-weight-bold">
+        <%= yield(:title) %>
+    </div>
+    <div class = "navbar-nav text-white font-weight-bold">
+        <%= link_to('Homepage', logout_path, method: 'delete', class: 'text-white') if logged_in? %>
+    </div>
+</nav>

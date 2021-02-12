@@ -17,6 +17,7 @@ gem 'link_with_icon'
 
 gem "aws-sdk-s3", require: false
 
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'

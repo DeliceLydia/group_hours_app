@@ -23,7 +23,7 @@ class GroupingsController < ApplicationController
         if grouping.save
             group_id = params[:grouping][:group_id]
             GroupHour.create(group_id: group_id, grouping_id: grouping.id) if group_id
-            flash[:success] = ['Grouped hours added']
+            flash[:success] = 'Grouped hours added'
             redirect_to groupings_path
         else
             flash[:danger] = grouping.errors.full_messages
