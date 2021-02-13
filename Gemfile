@@ -5,8 +5,6 @@ ruby '2.7.2'
 
 gem 'rubocop', '~>0.81.0'
 
-gem 'paperclip', '~> 6.0.0'
-
 gem 'font-awesome-rails'
 
 gem 'will_paginate', '~> 3.0'
