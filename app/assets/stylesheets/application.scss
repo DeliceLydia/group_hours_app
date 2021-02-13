@@ -14,8 +14,28 @@
  *= require_self
  */
 
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 @import "font-awesome";
+
+
+.home-title {
+  color: #377bc2;
+  font-size: 43px;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+.link-1 {
+  background-color: #377bc2;
+  border-radius: 5px;
+}
+
+.link-1 .link {
+  color: #fff;
+  font-size: 18px;
+}
 
 .heading {
   font-size: 2.675em;
@@ -48,6 +68,13 @@
   border-color: #f8f9fa;
 }
 
-.outline:hover {
+.outline:hover{
   text-decoration: underline;
 }
+
+.group-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
