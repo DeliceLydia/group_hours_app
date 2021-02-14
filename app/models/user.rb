@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :name, presence: true, uniqueness: true, length: { minimum: 3, maximum: 100 }
+  validates :name, presence: true, uniqueness: true, length: { minimum: 5, maximum: 100 }
   has_many :groupings
   has_many :groups
   has_one_attached :avatar
