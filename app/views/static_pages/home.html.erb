@@ -6,7 +6,11 @@
   <p class="text-center text-capitalize paragraph"> This application will helps its users to create groups of hours they spent
   working on different projects in their universities which will help them to manage 
   how they use their time </p>
-  <div class="d-flex justify-content-center link-1 w-50 mx-auto">
-    <%= link_to 'Signup', signup_path, class: 'nav-link btn mx-3 py-3 link' %>
+  <div class="d-flex justify-content-center link-1 mx-auto mb-3">
+    <%= link_to 'Sign In', login_path, class: 'nav-link btn link' %>
+  </div>
+  <span class="mx-auto d-flex justify-content-center"><%= 'Or'%></span>
+  <div class="d-flex justify-content-center green-color mx-auto w-50 rounded">
+    <%= link_to 'Signup', signup_path, class: 'nav-link btn mx-3 link text-white green-color' %>
   </div>
 </div>
