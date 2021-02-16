@@ -1,8 +1,11 @@
 # Group Hours App
 
 Group Hours is an Application that Will help those who use it to group hours spent on different projects in their universities.
+
 ![screenshot](./page.png)
+
 ![screenshot](./new.png)
+
 ![screenshot](./profile.png)
 
 This App has the following features:
