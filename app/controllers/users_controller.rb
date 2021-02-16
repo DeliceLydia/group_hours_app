@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = 'Signed Up successfully!'
       redirect_to @user
     else
+      flash[:danger] = @user.errors.full_messages
       render :new
     end
   end

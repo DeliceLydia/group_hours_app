@@ -21,7 +21,6 @@ RSpec.describe Group, type: :model do
     expect(group).to_not be_valid
   end
 
-
   it 'should not be valid if not provided a user_id' do
     group = Group.new(name: 'ruby', user_id: nil)
     expect(group).to_not be_valid
@@ -31,5 +30,4 @@ RSpec.describe Group, type: :model do
     group = Group.new(name: 'ruby', user_id: @user.id)
     expect(group).to be_valid
   end
-
 end
