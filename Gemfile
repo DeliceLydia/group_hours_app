@@ -15,6 +15,8 @@ gem 'link_with_icon'
 
 gem 'jquery-rails'
 
+gem 'coveralls', require: false
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use postgresql as the database for Active Record
