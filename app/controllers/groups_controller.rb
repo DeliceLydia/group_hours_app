@@ -2,7 +2,7 @@ class GroupsController < ApplicationController
   before_action :logged_in
 
   def index
-    @groups = Group.includes(:user).paginate(page: params[:page], per_page: 3).order(:name).with_attached_icon
+    @groups = Group.index_group(params[:page])
   end
 
   def new
@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = Group.includes(:groupings, :user).find(params[:id])
+    @group = Group.show_group(params[:id])
   end
 
   private

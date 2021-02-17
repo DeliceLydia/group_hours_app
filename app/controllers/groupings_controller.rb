@@ -2,13 +2,11 @@ class GroupingsController < ApplicationController
   before_action :logged_in
 
   def index
-    @groupings = Grouping.includes(groups: [icon_attachment: :blob]).paginate(page: params[:page], per_page: 3)
-      .where('author_id=?', current_user.id).joins(:groups)
+    @groupings = Grouping.grouping_index(params[:page], current_user)
   end
 
   def external_index
-    @groupings = Grouping.includes(groups: [icon_attachment: :blob]).paginate(page: params[:page], per_page: 3)
-      .where('author_id=?', current_user.id).left_outer_joins(:groups).where('groups.id IS NULL')
+    @groupings = Grouping.external(params[:page], current_user)
     render 'index'
   end
 

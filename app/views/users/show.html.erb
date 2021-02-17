@@ -13,11 +13,11 @@
             <%= link_to 'All My External Grouped Hours', groupings_external_index_path, class: 'text-white' %>
         </li>
         <li class="lists-items">
-        <i class="fa mr-3 fa-users"></i>
-        <%= link_to 'All groups', groups_path, class: 'text-white' %>
+            <i class="fa mr-3 fa-users"></i>
+            <%= link_to 'All groups', groups_path, class: 'text-white' %>
         </li>
         <li class="lists-items">
-        <i class="fa mr-3 fa-sign-out"></i>
+            <i class="fa mr-3 fa-sign-out"></i>
             <%= link_to('Logout', logout_path, method: 'delete', class: 'text-white') if logged_in? %>
         </li>
     </ul>
