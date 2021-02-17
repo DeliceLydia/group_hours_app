@@ -47,9 +47,11 @@ To get this project set up on your local machine, follow these simple steps:
 3. Cd in the project ``` group_hours_app ```
 4. Run ``` bundle install ```
 5. Create database by running ``` rails db:create ```
-6. Run database migration by running ``` rails db:migrate ```
-7. Start your server ``` rails server ```
-8. Run the app ``` http://localhost:3000/ ```
+6. Install webpacker by running 
+``` bundle exec rails webpacker:install ```
+7. Run database migration by running ``` rails db:migrate ```
+8. Start your server ``` rails server ```
+9. Run the app ``` http://localhost:3000/ ```
 
 ## Run tests
 
@@ -65,9 +67,9 @@ Feel free to check the [issues page](https://github.com/DeliceLydia/group_hours_
 ## Authors
 
 👤 **Delice Lydia**
-  - GitHub: [@githubhandle](https://github.com/DeliceLydia)
-  - Twitter: [@twitterhandle](https://twitter.com/IngabireLydia)
-  - LinkedIn: [LinkedIn](https://twitter.com/IngabireLydia3)
+  - GitHub: [Delice Lydia](https://github.com/DeliceLydia)
+  - Twitter: [Delice](https://twitter.com/IngabireLydia)
+  - LinkedIn: [Delice LYdia](https://www.linkedin.com/in/delice-lydia/)
 
 ## Show your support
 
@@ -79,4 +81,4 @@ Credits goes to the [**Gregoire Vella on Behance**](https://www.behance.net/gall
 
 # License
 ​
-This project is [MIT](./LICENSE.txt) licensed.
+This project is [MIT](https://github.com/meronokbay/group-payments/blob/master/LICENSE) licensed.

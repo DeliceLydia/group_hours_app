@@ -17,37 +17,6 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 
-
-.home-title {
-  color: #377bc2;
-  font-size: 3rem;
-  font-family: "Satisfy", cursive;
-}
-
-.margin {
-  margin: 4rem auto 2rem auto;
-}
-
-.paragraph {
-  font-size: 18px;
-}
-
-.link-1 {
-  background-color: #377bc2;
-  border-radius: 5px;
-}
-
-.link-1 .link {
-  color: #fff;
-  font-size: 18px;
-}
-
-.heading {
-  font-size: 2.675em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-transform: capitalize;
-}
-
 .title {
   color: #377bc2;
 }
@@ -55,6 +24,14 @@
 .button {
   background-color: #377bc2;
   color: #fff;
+}
+
+.outline {
+  border-color: #f8f9fa;
+}
+  
+.outline:hover {
+  text-decoration: underline;
 }
 
 .head-hour {
@@ -67,19 +44,5 @@
 
 .alert-error {
   @extend .alert-warning;
-}
-
-.outline {
-  border-color: #f8f9fa;
-}
-
-.outline:hover{
-  text-decoration: underline;
-}
-
-.group-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
 }
 

@@ -1,3 +1,28 @@
 // Place all the styles related to the Static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home-title {
+  color: #377bc2;
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+}
+
+.margin {
+  margin: 4rem auto 2rem auto;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+.link-1 {
+  background-color: #377bc2;
+  border-radius: 5px;
+}
+
+.link-1 .link {
+  color: #fff;
+  font-size: 18px;
+}
