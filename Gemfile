@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
-
 gem 'rubocop', '~>0.81.0'
 
 gem 'font-awesome-rails'
