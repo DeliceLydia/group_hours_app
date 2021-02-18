@@ -40,7 +40,7 @@
 .outline {
   border-color: #f8f9fa;
 }
-  
+
 .outline:hover {
   text-decoration: underline;
 }
@@ -56,4 +56,3 @@
 .alert-error {
   @extend .alert-warning;
 }
-

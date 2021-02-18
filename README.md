@@ -1,5 +1,3 @@
-[![Coverage Status](https://coveralls.io/repos/github/DeliceLydia/group_hours_app/badge.svg?branch=feature_branch)](https://coveralls.io/github/DeliceLydia/group_hours_app?branch=feature_branch)
-
 # Group Hours App
 
 Group Hours is an Application that Will help those who use it to group hours spent on different projects in their universities.
