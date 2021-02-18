@@ -14,4 +14,6 @@ class Grouping < ApplicationRecord
     includes(groups: [icon_attachment: :blob]).paginate(page: params_data, per_page: 3)
       .where('author_id=?', current.id).left_outer_joins(:groups).where('groups.id IS NULL')
   end
+
+  scope :grouped, -> { where.not(groups: [nil]).order('created_at DESC') }
 end

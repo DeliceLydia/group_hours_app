@@ -2,7 +2,7 @@ class GroupingsController < ApplicationController
   before_action :logged_in
 
   def index
-    @groupings = Grouping.grouping_index(params[:page], current_user)
+    @groupings = Grouping.grouping_index(params[:page], current_user).grouped
   end
 
   def external_index

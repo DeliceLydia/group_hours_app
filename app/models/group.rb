@@ -7,7 +7,7 @@ class Group < ApplicationRecord
   validates :icon, blob: { content_type: :image }
 
   def self.index_group(data_params)
-    includes(:user).paginate(page: data_params, per_page: 3).order(:name).with_attached_icon
+    includes(:user).paginate(page: data_params, per_page: 3).order('created_at DESC').with_attached_icon
   end
 
   def self.show_group(params_id)
