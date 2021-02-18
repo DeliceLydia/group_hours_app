@@ -12,8 +12,8 @@
       </div>
       <%= g.collection_select(:group_id, Group.all, :id, :name, {include_blank: true}, {class: 'custom-select'}) %>
     </div>
-    <div class="green-color w-75 mx-auto">
-    <%= g.submit "Submit Grouping", class: "btn text-white mx-auto d-block"%>
+    <div class="green-color w-75 mx-auto rounded">
+    <%= g.submit "Submit Grouping", class: "btn button mx-auto d-block"%>
     </div>
   <%end%>
 </div>
