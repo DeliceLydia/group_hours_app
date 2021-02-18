@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Logins", type: :system do
+RSpec.describe 'Logins', type: :system do
   before do
     driven_by(:rack_test)
   end
@@ -9,7 +9,7 @@ RSpec.describe "Logins", type: :system do
     u = User.create(name: 'lydia')
     visit root_url
     click_link_or_button 'Sign In'
-    fill_in "Name", with: u.name
+    fill_in 'Name', with: u.name
     click_link_or_button 'Sign In'
     expect(page).to have_css('img.avatar', count: 1)
   end
@@ -18,7 +18,7 @@ RSpec.describe "Logins", type: :system do
     u = User.create(name: 'lydia')
     visit root_url
     click_link_or_button 'Sign In'
-    fill_in "Name", with: u.name
+    fill_in 'Name', with: u.name
     click_link_or_button 'Sign In'
     expect(page).to have_content 'Successfully Logged In!'
   end
@@ -26,7 +26,7 @@ RSpec.describe "Logins", type: :system do
   it 'should not login a user who does not exist' do
     visit root_url
     click_link_or_button 'Sign In'
-    fill_in "Name", with: 'delice'
+    fill_in 'Name', with: 'delice'
     click_link_or_button 'Sign In'
     expect(page).to have_content 'Name not found!'
   end
@@ -34,7 +34,7 @@ RSpec.describe "Logins", type: :system do
   it 'should not login a user who does not provide a name' do
     visit root_url
     click_link_or_button 'Sign In'
-    fill_in "Name", with: nil
+    fill_in 'Name', with: nil
     click_link_or_button 'Sign In'
     expect(page).to have_content 'Name not found!'
   end

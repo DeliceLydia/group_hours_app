@@ -27,8 +27,9 @@ This App has the following features:
 ## Built With
 
 - Ruby v2.7.2
-- Ruby on Rails v6.1.1
+- Rails v6.1.1
 - Rspec
+- Capybara
 - Bootstrap
 
 ## Live Demo
@@ -71,7 +72,7 @@ Feel free to check the [issues page](https://github.com/DeliceLydia/group_hours_
 👤 **Delice Lydia**
   - GitHub: [Delice Lydia](https://github.com/DeliceLydia)
   - Twitter: [Delice](https://twitter.com/IngabireLydia)
-  - LinkedIn: [Delice LYdia](https://www.linkedin.com/in/delice-lydia/)
+  - LinkedIn: [Delice Lydia](https://www.linkedin.com/in/delice-lydia/)
 
 ## Show your support
 

@@ -13,5 +13,4 @@ class Group < ApplicationRecord
   def self.show_group(params_id)
     includes(:groupings, :user).find(params_id)
   end
-
 end

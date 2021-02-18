@@ -20,7 +20,7 @@ RSpec.describe GroupsHelper, type: :helper do
     it 'displays default icon if icon is not provided' do
       expect(group_icon(@group)).to eq(image_tag('default-group-icon.png', class: 'group-img'))
     end
-    
+
     it 'displays custom icon if icon is provided' do
       @group.icon.attach(io: File.open('spec/test.png'), filename: 'test.png', content_type: 'image/png')
       expect(group_icon(@group)).not_to eq(image_tag('default-group-icon.png', class: 'group-img'))
