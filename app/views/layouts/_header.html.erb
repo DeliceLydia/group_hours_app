@@ -1,0 +1,11 @@
+<nav class = "navbar navbar-dark user_page py-4">
+    <%= link_to burger_icon, class: "navbar-brand" do %>
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+    <% end %>
+    <div class="navbar-nav text-white font-weight-bold">
+        <%= yield(:title) %>
+    </div>
+    <div class = "navbar-nav font-weight-bold">
+        <%= link_to('Logout', logout_path, method: 'delete', class: 'nav-link') if logged_in? %>
+    </div>
+</nav>

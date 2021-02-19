@@ -1,0 +1,24 @@
+<div class = "vh-100 text-white user_page">
+    <div class="py-3 text-center">
+        <%= display_avatar(@user) %>
+        <h1><%= @user.name %></h1>
+    </div>
+    <ul class="list-group my-5">
+        <li class="lists-items">
+            <i class="fa mr-3 fa-globe"></i>
+            <%= link_to 'All My Grouped Hours', groupings_path, class: 'text-white' %>
+        </li>
+        <li class="lists-items">
+            <i class="fa mr-3 fa-object-group"></i>
+            <%= link_to 'All My External Grouped Hours', groupings_external_index_path, class: 'text-white' %>
+        </li>
+        <li class="lists-items">
+            <i class="fa mr-3 fa-users"></i>
+            <%= link_to 'All groups', groups_path, class: 'text-white' %>
+        </li>
+        <li class="lists-items">
+            <i class="fa mr-3 fa-sign-out"></i>
+            <%= link_to('Logout', logout_path, method: 'delete', class: 'text-white') if logged_in? %>
+        </li>
+    </ul>
+</div>

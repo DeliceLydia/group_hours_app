@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: delice
+  api_key: '239877626468716'
+  api_secret: 9H2aZjRK9vJzEek7oVUTOMODupA
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: delice
+  api_key: '239877626468716'
+  api_secret: 9H2aZjRK9vJzEek7oVUTOMODupA
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: delice
+  api_key: '239877626468716'
+  api_secret: 9H2aZjRK9vJzEek7oVUTOMODupA
+  enhance_image_tag: true
+  static_file_support: false

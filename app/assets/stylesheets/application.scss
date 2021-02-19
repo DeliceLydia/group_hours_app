@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+
+.title {
+  color: #377bc2;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.outline {
+  border-color: #f8f9fa;
+}
+
+.outline:hover {
+  text-decoration: underline;
+}
+
+.head-hour {
+  font-size: 16px;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+.alert-error {
+  @extend .alert-warning;
+}
