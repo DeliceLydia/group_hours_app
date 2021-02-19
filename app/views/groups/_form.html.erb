@@ -1,0 +1,14 @@
+<div class="w-75 mx-auto shadow p-4 mt-5 mb-5">
+    <%= form_with model: @group, local: true do |g| %>
+    <div class= "form-group">
+        <%= g.text_field :name, class: "form-control", placeholder: "Add name here.."%>
+    </div>
+    <div class="custom-file my-3">
+    <%= g.file_field :icon, class: 'custom-file-input', direct_upload: true,accept: "image/jpeg, image/gif, image/png" %>
+    <%= g.label :icon, class: 'custom-file-label' %>
+    </div>
+    <div class="green-color py-3 fixed-bottom">
+        <%= g.submit "Create Group", class: "btn outline mx-auto w-75 py-3 d-block button"%>
+    </div>
+    <%end%>
+</div>
