@@ -82,4 +82,4 @@ Credits goes to the [**Gregoire Vella on Behance**](https://www.behance.net/gall
 
 # License
 ​
-This project is [MIT](https://github.com/meronokbay/group-payments/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/DeliceLydia/group_hours_app/blob/master/LICENSE) licensed.
